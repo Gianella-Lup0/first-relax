@@ -130,6 +130,26 @@ header {
   color: #555;
 }
 
+.ver-mas-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn-ver-mas {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #0077b6;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-ver-mas:hover {
+  background-color: #005f8c;
+}
+
 /* ---------- VIDEO ---------- */
 .video {
   background: linear-gradient(135deg, #e0f7fa, #fff);
