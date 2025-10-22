@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinos</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">
+        <img src="../img/First-relax.png" alt="Icono de First-relax" class="logo-icon">
+        First<span>-</span>relax
+      </h1>
+      
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="./destinos.html" class="active">Destinos</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <div id="inicio" class="hero">
+      <h2>Descubrí el mundo con nosotros</h2>
+      <p>Viajes únicos, experiencias inolvidables y los mejores destinos a tu alcance.</p>
+      <a href="./destinos.html" class="btn">Ver destinos</a>
+    </div>
+  </header>
+
+<!-- FILTROS -->
+<section class="filtros">
+  <div class="filter-options">
+    <label class="filter-btn active">
+      <input type="radio" name="categoria" checked> Todos
+    </label>
+    <label class="filter-btn">
+      <input type="radio" name="categoria"> Playa
+    </label>
+    <label class="filter-btn">
+      <input type="radio" name="categoria"> Ciudad
+    </label>
+    <label class="filter-btn">
+      <input type="radio" name="categoria"> Naturaleza
+    </label>
+    <label class="filter-btn">
+      <input type="radio" name="categoria"> Cultura
+    </label>
+    <label class="filter-btn">
+      <input type="radio" name="categoria"> Aventura
+    </label>
+  </div>
+</section>
+
+
+  <!-- DESTINOS -->
+  <main>
+    <section id="destinos" class="destinos">
+      <h2>Conocé nuestros destinos</h2>
+      <div class="grid">
+        <!-- Originales -->
+        <div class="card">
+          <img src="../img/paris.jpg" alt="París">
+          <h3>París, Francia</h3>
+          <p>La ciudad del amor, ideal para quienes disfrutan del arte y la historia.</p>
+          <span class="categoria">Ciudad</span>
+          <p class="precio">Desde $1.500 USD</p>
+        </div>
+
+        <div class="card">
+          <img src="../img/bali.jpg" alt="Bali">
+          <h3>Bali, Indonesia</h3>
+          <p>Playas paradisíacas y templos rodeados de vegetación tropical.</p>
+          <span class="categoria">Playa</span>
+          <p class="precio">Desde $1.200 USD</p>
+        </div>
+
+        <div class="card">
+          <img src="../img/nueva-york.jpg" alt="Nueva York">
+          <h3>Nueva York, EE.UU.</h3>
+          <p>Vibrante, moderna y llena de experiencias culturales únicas.</p>
+          <span class="categoria">Ciudad</span>
+          <p class="precio">Desde $1.800 USD</p>
+        </div>
+
+        <div class="card">
+          <img src="../img/roma.jpg" alt="Roma">
+          <h3>Roma, Italia</h3>
+          <p>Historia viva en cada rincón y una gastronomía irresistible.</p>
+          <span class="categoria">Cultura</span>
+          <p class="precio">Desde $1.400 USD</p>
+        </div>
+
+        <div class="card">
+          <img src="../img/kyoto.jpg" alt="Kyoto">
+          <h3>Kioto, Japón</h3>
+          <p>Cerezos en flor, templos y una profunda conexión espiritual.</p>
+          <span class="categoria">Cultura</span>
+          <p class="precio">Desde $2.000 USD</p>
+        </div>
+
+        <div class="card">
+          <img src="../img/santorini.jpg" alt="Santorini">
+          <h3>Santorini, Grecia</h3>
+          <p>Casas blancas y vistas impresionantes al mar Egeo.</p>
+          <span class="categoria">Playa</span>
+          <p class="precio">Desde $1.300 USD</p>
+        </div>
+
+        <div class="card">
+          <img src="../img/machu--picchu.jpg" alt="Machu Picchu">
+          <h3>Machu Picchu, Perú</h3>
+          <p>Una maravilla ancestral en medio de las montañas andinas.</p>
+          <span class="categoria">Aventura</span>
+          <p class="precio">Desde $1.100 USD</p>
+        </div>
+
+        <div class="card">
+          <img src="../img/bariloche.jpg" alt="Bariloche">
+          <h3>Bariloche, Argentina</h3>
+          <p>Montañas, lagos y una atmósfera mágica en la Patagonia.</p>
+          <span class="categoria">Naturaleza</span>
+          <p class="precio">Desde $900 USD</p>
+        </div>
+
+        <!-- Nuevos -->
+        <div class="card">
+          <img src="../img/cancun.jpg" alt="Cancún">
+          <h3>Cancún, México</h3>
+          <p>Aguas cristalinas, vida nocturna y ruinas mayas a pocos kilómetros.</p>
+          <span class="categoria">Playa</span>
+          <p class="precio">Desde $1.000 USD</p>
+        </div>
+
+        <div class="card">
+          <img src="../img/londres.jpg" alt="Londres">
+          <h3>Londres, Reino Unido</h3>
+          <p>Una mezcla perfecta de historia, modernidad y cultura pop.</p>
+          <span class="categoria">Ciudad</span>
+          <p class="precio">Desde $1.900 USD</p>
+        </div>
+
+        <div class="card">
+          <img src="../img/cusco.jpg" alt="Cusco">
+          <h3>Cusco, Perú</h3>
+          <p>Capital del Imperio Inca y punto de partida hacia Machu Picchu.</p>
+          <span class="categoria">Cultura</span>
+          <p class="precio">Desde $800 USD</p>
+        </div>
+
+        <div class="card">
+          <img src="../img/capadocia.jpg" alt="Capadocia">
+          <h3>Capadocia, Turquía</h3>
+          <p>Vuelos en globo y paisajes surrealistas de roca volcánica.</p>
+          <span class="categoria">Aventura</span>
+          <p class="precio">Desde $1.600 USD</p>
+        </div>
+
+        <div class="card">
+          <img src="../img/venecia.jpg" alt="Venecia">
+          <h3>Venecia, Italia</h3>
+          <p>Paseos en góndola, canales románticos y arte en cada esquina.</p>
+          <span class="categoria">Ciudad</span>
+          <p class="precio">Desde $1.400 USD</p>
+        </div>
+
+        <div class="card">
+          <img src="../img/patagonia-chilena.jpg" alt="Patagonia chilena">
+          <h3>Patagonia Chilena</h3>
+          <p>Glaciares, montañas y una naturaleza imponente.</p>
+          <span class="categoria">Naturaleza</span>
+          <p class="precio">Desde $1.000 USD</p>
+        </div>
+
+        <div class="card">
+          <img src="../img/dubai.jpg" alt="Dubái">
+          <h3>Dubái, Emiratos Árabes</h3>
+          <p>Lujo, modernidad y desierto en una ciudad que nunca duerme.</p>
+          <span class="categoria">Ciudad</span>
+          <p class="precio">Desde $2.200 USD</p>
+        </div>
+
+        <div class="card">
+          <img src="../img/reykjavik.jpg" alt="Reykjavik">
+          <h3>Reykjavik, Islandia</h3>
+          <p>Auroras boreales, géiseres y paisajes de otro planeta.</p>
+          <span class="categoria">Naturaleza</span>
+          <p class="precio">Desde $2.100 USD</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 First-relax. Todos los derechos reservados.</p>
+    <p>Hecho con ❤️ para los amantes de los viajes.</p>
+  </footer>
+</body>
+</html>
