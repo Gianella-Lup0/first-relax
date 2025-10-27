@@ -1,4 +1,4 @@
-/* ---------- RESET ---------- */ 
+/* ---------- RESET ---------- */
 * {
   margin: 0;
   padding: 0;
@@ -25,31 +25,29 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 60px;
-  flex-wrap: wrap;
 }
 
-/* ---------- LOGO ---------- */
 .logo {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  gap: 10px; /* espacio entre icono y texto */
-  font-size: 1.8rem;
+  justify-content: flex-start;
+}
+
+.logo h1 {
   font-weight: 600;
-  color: #fff;
+  font-size: 1.8rem;
+  margin-left: .5em;
 }
 
-.logo span {
-  color: #ffe57f; /* color acento */
+.logo h1 span {
+  color: #ffe57f;
 }
 
-.logo-icon {
-  width: 50px;  /* tamaño del ícono */
-  height: auto;
-  object-fit: contain;
+.logo img {
+  width: 60px;
 }
 
-/* ---------- NAV LINKS ---------- */
 .nav-links {
   list-style: none;
   display: flex;
@@ -63,8 +61,7 @@ header {
   transition: color 0.3s;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
+.nav-links a:hover {
   color: #ffe57f;
 }
 
@@ -111,77 +108,18 @@ header {
   color: #1e90ff;
 }
 
-/* ---------- FILTROS ---------- */
-.filtros {
-  text-align: center;
-  padding: 60px 20px 30px;
-  background: linear-gradient(135deg, #f9f9fb, #eef4ff);
-}
-
-.filtros-titulo {
-  font-size: 1.5rem;
-  color: #1e90ff;
-  font-weight: 600;
-  margin-bottom: 25px;
-}
-
-.filter-options {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-.filter-btn {
-  background-color: #fff;
-  border: 2px solid #ffe57f;
-  color: #ffe57f;
-  border-radius: 30px;
-  padding: 10px 20px;
-  font-weight: 500;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-}
-
-.filter-btn:hover {
-  background-color: #ffe57f;
-  color: #fff;
-  transform: translateY(-2px);
-}
-
-.filter-btn.active {
-  background-color: #1e90ff;
-  color: #fff;
-  box-shadow: 0 4px 10px rgba(30,144,255,0.3);
-}
-
-/* Ocultar los radios nativos */
-.filter-btn input[type="radio"] {
-  display: none;
-}
-
-/* --- GRILLAS CENTRADAS --- */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  justify-content: center;
   gap: 30px;
-  margin: 0 auto;
-  max-width: 1200px;
-  padding: 20px;
 }
 
-/* --- TARJETAS --- */
 .card {
-  background: #fff;
+  background: #fdfdfd;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   overflow: hidden;
   transition: transform 0.3s;
-  max-width: 320px;
-  margin: 0 auto;
 }
 
 .card:hover {
@@ -204,23 +142,6 @@ header {
   color: #555;
 }
 
-.categoria {
-  display: inline-block;
-  margin: 10px 0;
-  background-color: #e3f2fd;
-  color: #0077b6;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 0.85rem;
-}
-
-.precio {
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 15px;
-}
-
-/* --- BOTÓN VER MÁS --- */
 .ver-mas-container {
   text-align: center;
   margin-top: 30px;
@@ -275,7 +196,6 @@ header {
 .reviews {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  justify-content: center;
   gap: 30px;
 }
 
@@ -285,6 +205,128 @@ header {
   border-radius: 10px;
   font-style: italic;
 }
+
+/* ---------- FOOTER ---------- */
+footer {
+  background: #1e90ff;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.9rem;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .grid, .reviews {
+    grid-template-columns: 1fr;
+  }
+
+  iframe {
+    width: 100%;
+  }
+}
+
+
+/* --- FILTROS --- */
+.filtros {
+  text-align: center;
+  background: #f7f7f7;
+  padding: 40px 20px;
+}
+
+.filter-options {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.filter-options label {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-options label:hover {
+  background-color: #0077b6;
+  color: #fff;
+}
+
+/* --- DESTINOS --- */
+.destinos {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.destinos .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px 0 5px;
+  color: #0077b6;
+}
+
+.card p {
+  padding: 0 15px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.categoria {
+  display: inline-block;
+  margin: 10px 0;
+  background-color: #e3f2fd;
+  color: #0077b6;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+}
+
+.precio {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+#destinos-inicio .card p:first-of-type {
+  margin-bottom: 15px;
+}
+
 
 /* ---------- CONTACTO ---------- */
 .hero-contacto {
@@ -318,8 +360,7 @@ header {
   gap: 15px;
 }
 
-.contacto input,
-.contacto textarea {
+.contacto input, .contacto textarea {
   padding: 12px;
   border-radius: 8px;
   border: 1px solid #ccc;
@@ -329,8 +370,7 @@ header {
   transition: all 0.3s;
 }
 
-.contacto input:focus,
-.contacto textarea:focus {
+.contacto input:focus, .contacto textarea:focus {
   border-color: #1e90ff;
   box-shadow: 0 0 5px rgba(30, 144, 255, 0.4);
 }
@@ -380,35 +420,8 @@ header {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* ---------- FOOTER ---------- */
-footer {
-  background: #1e90ff;
-  color: white;
-  text-align: center;
-  padding: 30px 20px;
-  font-size: 0.9rem;
-}
-
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .hero h2 {
-    font-size: 2rem;
-  }
-
-  .grid,
-  .reviews {
-    grid-template-columns: 1fr;
-  }
-
-  iframe {
-    width: 100%;
-  }
-
   .contacto {
     padding: 60px 20px;
   }
