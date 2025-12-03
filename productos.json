@@ -4,82 +4,82 @@
         "titulo": "París, Francia",
         "descripcion": "La ciudad del amor, ideal para quienes disfrutan del arte y la historia.",
         "precio": 1500,
-        "imagen": "../img/paris.jpg"
+        "imagen": "./img/paris.jpg"
     },
     {
         "id": 2,
         "titulo": "Bali, Indonesia",
         "descripcion": "Playas paradisíacas y templos rodeados de vegetación tropical.",
         "precio": 1200,
-        "imagen": "../img/bali.jpg"
+        "imagen": "./img/bali.jpg"
     },
     {
         "id": 3,
         "titulo": "Nueva York, EE.UU.",
         "descripcion": "Vibrante, moderna y llena de experiencias culturales únicas.",
         "precio": 1900,
-        "imagen": "../img/nueva-york.jpg"
+        "imagen": "./img/nueva-york.jpg"
     },
     {
         "id": 4,
         "titulo": "Roma, Italia",
         "descripcion": "Historia viva en cada rincón y una gastronomía irresistible.",
         "precio": 1400,
-        "imagen": "../img/roma.jpg"
+        "imagen": "./img/roma.jpg"
     },
     {
         "id": 5,
         "titulo": "Kioto, Japón",
         "descripcion": "Cerezos en flor, templos y una profunda conexión espiritual.",
         "precio": 2000,
-        "imagen": "../img/kyoto.jpg"
+        "imagen": "./img/kyoto.jpg"
     },
     {
         "id": 6,
         "titulo": "Santorini, Grecia",
         "descripcion": "Casas blancas y vistas impresionantes al mar Egeo.",
         "precio": 1300,
-        "imagen": "../img/santorini.jpg"
+        "imagen": "./img/santorini.jpg"
     },
     {
         "id": 7,
         "titulo": "Machu Picchu, Perú",
         "descripcion": "Una maravilla ancestral en medio de las montañas andinas.",
         "precio": 1100,
-        "imagen": "../img/machu--picchu.jpg"
+        "imagen": "./img/machu--picchu.jpg"
     },
     {
         "id": 8,
         "titulo": "Bariloche, Argentina",
         "descripcion": "Montañas, lagos y una atmósfera mágica en la Patagonia.",
         "precio": 900,
-        "imagen": "../img/bariloche.jpg"
+        "imagen": "./img/bariloche.jpg"
     },
     {
         "id": 9,
         "titulo": "Cancún, México",
         "descripcion": "Aguas cristalinas, vida nocturna y ruinas mayas a pocos kilómetros.",
         "precio": 1000,
-        "imagen": "../img/cancun.jpg"
+        "imagen": "./img/cancun.jpg"
     },
     {
         "id": 10,
         "titulo": "Londres, Reino Unido",
         "descripcion": "Una mezcla perfecta de historia, modernidad y cultura pop.",
         "precio": 1900,
-        "imagen": "../img/londres.jpg"
+        "imagen": "./img/londres.jpg"
     },    {
         "id": 11,
         "titulo": "Capadocia, Turquía",
         "descripcion": "Vuelos en globo y paisajes surrealistas de roca volcánica.",
         "precio": 1600,
-        "imagen": "../img/capadocia.jpg"
+        "imagen": "./img/capadocia.jpg"
     },
     {
         "id": 12,
         "titulo": "Cusco, Perú",
         "descripcion": "Capital del Imperio Inca y punto de partida hacia Machu Picchu.",
         "precio": 800,
-        "imagen": "../img/cusco.jpg"
+        "imagen": "./img/cusco.jpg"
     }
 ]
